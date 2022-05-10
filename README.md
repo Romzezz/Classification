@@ -13,20 +13,28 @@
 		<hr>
 		<h3>Примеры решения задач</h3>
 		<h5>Ввод параметров функции: </h5> 
-		<img src=""
-		     height="210px">
+		<img src="Images/i1.1.png"
+		     height="50px">
 		<h5>Вывод: </h5>                                                
-		<img src=""
+		<img src="Images/i1.2.png"
 		     height="322px">
-		<h5>Ввод параметров функции и вывод : </h5> 
-		<img src=""
-		     height="210px">
-		<hr>
+		<h5>Вывод визуализации: </h5>                                                
+		<img src="Images/i1.3.png"
+		     height="322px">
+		<h5>Ввод параметров функции: </h5> 
+		<img src="Images/i2.1.png"
+		     height="50px">
+		<h5>Вывод: </h5>                                                
+		<img src="Images/i2.2.png"
+		     height="322px">
+		<h5>Вывод визуализации: </h5>                                                
+		<img src="Images/i2.3.png"
+		     height="322px">
 		<h4>Ввод параметров функции: </h4>
-		<img src=""
-		     height="150px">
+		<img src="Images/i3.1.png"
+		     height="50px">
 		<h5>Вывод таблицы: </h5> 
-		<img src=""
+		<img src="Images/i3.2.png"
 		     height="60px">
 		<hr>
 		<h3>Участники проекта</h3>
