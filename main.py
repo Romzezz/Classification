@@ -151,34 +151,3 @@ def compare(X_train, y_train, X_test, y_test, regularization=None):
     fig.show()
 
 
-# In[13]:
-
-
-# чтобы получать новые датасеты, можно перезапускать эту ячейку
-X, y = make_classification(n_samples=1000, n_features=2, n_redundant=0)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
-
-
-# In[14]:
-
-
-logistic_regression(X_train, y_train, X_test, regularization='l1', visualize=True)
-
-
-# In[15]:
-
-
-svm(X_train, y_train, X_test, visualize=True)
-
-
-# In[16]:
-
-
-compare(X_train, y_train, X_test, y_test, regularization='l1')
-
-
-# In[ ]:
-
-
-
-
