@@ -18,7 +18,7 @@ import numpy as np
 # In[2]:
 
 
-def logistic_regression(X_train, y_train, X_test, regularization=None, visualize=False):
+def logistic_regression(X_train, y_train, X_test, y_test, regularization=None, visualize=False):
     '''
     Классификатор, основанный на логистической регрессии.
             Параметры:
@@ -68,7 +68,7 @@ def logistic_regression(X_train, y_train, X_test, regularization=None, visualize
 # In[3]:
 
 
-def svm(X_train, y_train, X_test, visualize=False):
+def svm(X_train, y_train, X_test, y_test, visualize=False):
     '''
     Классификатор, основанный на векторе опорных векторов.
             Параметры:
@@ -138,10 +138,10 @@ def compare(X_train, y_train, X_test, y_test, regularization=None):
                     None
     '''
     start = time()
-    log_reg_predict = logistic_regression(X_train, y_train, X_test, regularization=regularization)['predicted']
+    log_reg_predict = logistic_regression(X_train, y_train, X_test, y_test, regularization=regularization)['predicted']
     log_reg_duration = time() - start
     start = time()
-    svm_predict = svm(X_train, y_train, X_test)['predicted']
+    svm_predict = svm(X_train, y_train, X_test, y_test)['predicted']
     svm_duration = time() - start
     log_reg_accuracy = accuracy_score(y_test, log_reg_predict)
     svm_accuracy = accuracy_score(y_test, svm_predict)
